@@ -1,0 +1,7 @@
+from django.urls import path
+from .api_views import item_list, item_detail
+
+urlpatterns = [
+    path('items/', item_list),
+    path('items/<int:pk>/', item_detail),
+]

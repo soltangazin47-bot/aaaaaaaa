@@ -1,0 +1,16 @@
+{% extends "app/base.html" %}
+{% block content %}
+<h2>Group: {{ group.name }}</h2>
+
+<ul>
+  {% for student in group.students.all %}
+    <li>
+      <a href="{% url 'student_detail' student.id %}">
+        {{ student.name }}
+      </a>
+    </li>
+  {% empty %}
+    <li>No students</li>
+  {% endfor %}
+</ul>
+{% endblock %}

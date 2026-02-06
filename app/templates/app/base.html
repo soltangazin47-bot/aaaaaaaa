@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Django Project</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'app/style.css' %}">
+</head>
+<body>
+  <h1>My Django Project</h1>
+  <a href="/">Home</a> | <a href="/groups/">Groups</a>
+  <hr>
+  {% block content %}{% endblock %}
+</body>
+</html>
