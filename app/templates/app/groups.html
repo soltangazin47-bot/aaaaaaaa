@@ -1,15 +1,19 @@
 {% extends "app/base.html" %}
+
 {% block content %}
 <h2>Groups</h2>
+
+<div class="card">
 <ul>
-  {% for group in groups %}
-    <li>
-      <a href="{% url 'group_detail' group.id %}">
-        {{ group.name }}
-      </a>
-    </li>
-  {% empty %}
-    <li>No groups</li>
-  {% endfor %}
+    {% for group in groups %}
+        <li>
+            <a href="{% url 'group_detail' group.id %}">
+                {{ group.name }}
+            </a>
+        </li>
+    {% empty %}
+        <li>No groups yet</li>
+    {% endfor %}
 </ul>
+</div>
 {% endblock %}

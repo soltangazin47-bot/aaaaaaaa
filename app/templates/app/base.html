@@ -1,14 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Django Project</title>
-  {% load static %}
-  <link rel="stylesheet" href="{% static 'app/style.css' %}">
+    <meta charset="UTF-8">
+    <title>Django School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'app/style.css' %}">
 </head>
 <body>
-  <h1>My Django Project</h1>
-  <a href="/">Home</a> | <a href="/groups/">Groups</a>
-  <hr>
-  {% block content %}{% endblock %}
+
+<header class="site-header">
+    <div class="header-inner">
+        <h1>🎓 Django School</h1>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/groups/">Groups</a>
+            <a href="/admin/">Admin</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+    <p>Final Project · Django · 2026</p>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,51 @@
+/* ===== Admin Header ===== */
+#header {
+    background: linear-gradient(135deg, #4f46e5, #6366f1) !important;
+}
+
+#header h1 a {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+/* ===== Admin background ===== */
+body {
+    background: #f4f6fb !important;
+}
+
+/* ===== Admin cards ===== */
+.module {
+    background: #ffffff !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    padding: 16px;
+}
+
+/* ===== Buttons ===== */
+.button, input[type=submit], input[type=button] {
+    background: #4f46e5 !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+    padding: 8px 14px;
+    border: none !important;
+    font-weight: 600;
+}
+
+.button:hover {
+    background: #4338ca !important;
+}
+
+/* ===== Tables ===== */
+table thead th {
+    background: #eef2ff !important;
+    font-weight: 700;
+}
+
+/* ===== Links ===== */
+a {
+    color: #4f46e5 !important;
+}
+
+a:hover {
+    color: #4338ca !important;
+}
